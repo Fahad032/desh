@@ -17,6 +17,13 @@ class DatabaseSeeder extends Seeder
 
         $user = App\User::create(['name'=>'Fahad', 'email'=>'fhdplsh032@gmail.com', 'password'=>bcrypt('member')]);
 
+        $role = App\Role::create(['role'=>'Admin']);
+
+        App\Role::create(['role'=>'User']);
+
+        $user->roles()->sync([1]);
+
+
         App\Operator::insert([
 
             ['name' => 'grameen', 'created_at' => Carbon::today(), 'updated_at'=> Carbon::now()],
@@ -61,7 +68,7 @@ class DatabaseSeeder extends Seeder
         App\AdditionalsAndCommission::create(['additional_field_name' => 'One Taka']);
         App\AdditionalsAndCommission::create(['additional_field_name' => 'Company Commission']);
         App\AdditionalsAndCommission::create(['additional_field_name' => 'Mobi Cash Commission']);
-        App\AdditionalsAndCommission::create(['additional_field_name' => 'Due Get']);
+//        App\AdditionalsAndCommission::create(['additional_field_name' => 'Due Get']);
 
 
         //Model::reguard();
