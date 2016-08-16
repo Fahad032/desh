@@ -1,0 +1,50 @@
+.input-row-wrapper{
+    display: block;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+.archive-report-form{
+    padding: 15px;
+}
+
+.report-info{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.panel-default>.panel-heading{
+    background: #00c0ef;
+    border-top-color: #00c0ef;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 30px;
+}
+
+.btn-trash-default{
+
+    background: none;
+    border: 0;
+    color: #dd4b39 !important;
+
+}
+
+.recharge_form .btn, .ajax_submit .btn {
+
+    -moz-transform: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.recharge_form .btn.disabled{
+
+    transform: translateX(20%);
+    -moz-transform:  translateX(20%);
+    -webkit-transform:  translateX(20%);
+    -o-transform:  translateX(20%);
+
+}
